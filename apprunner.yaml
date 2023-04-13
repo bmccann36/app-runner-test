@@ -3,6 +3,6 @@ runtime: nodejs16
 build:
   commands:
     build:
-      - npm install --production
+      - npm install --prefix nested-backend
 run:
-  command: node index.js
+  command: node nested-backend/index.js
